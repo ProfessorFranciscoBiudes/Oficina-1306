@@ -53,4 +53,5 @@ h2{
 .imagens{
     justify-content: center;
     flex-direction: column;
+    display: flex;
 }
