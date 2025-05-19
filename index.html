@@ -26,9 +26,9 @@
             var n2 = parseFloat(document.getElementById('b').value);
             var n3 = parseFloat(document.getElementById('c').value);
 
-            var x1 = (-n2+Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n3);
+            var x1 = (-n2+Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n1);
 
-            var x2 = (-n2-Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n3);
+            var x2 = (-n2-Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n1);
 
             document.getElementById('x1').innerHTML = x1.toFixed(2);
 
