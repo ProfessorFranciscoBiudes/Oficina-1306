@@ -50,8 +50,10 @@ span {
 h2{
     justify-content: center;
 }
-.imagens{
-    justify-content: center;
+.imagens {
+    display: flex; 
     flex-direction: column;
-    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
