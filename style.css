@@ -47,3 +47,7 @@ p {
 span {
     font-weight: bold;
 }
+.imagem{
+    display: block;
+    justify-content: center;
+}
