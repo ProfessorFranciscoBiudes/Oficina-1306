@@ -52,4 +52,5 @@ h2{
 }
 .imagens{
     justify-content: center;
+    display: block;
 }
