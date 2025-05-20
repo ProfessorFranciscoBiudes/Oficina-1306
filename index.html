@@ -23,18 +23,26 @@
 
     <script>
         function calcular() {
-            var n1 = parseFloat(document.getElementById('a').value);
-            var n2 = parseFloat(document.getElementById('b').value);
-            var n3 = parseFloat(document.getElementById('c').value);
+    var a = parseFloat(document.getElementById('a').value);
+    var b = parseFloat(document.getElementById('b').value);
+    var c = parseFloat(document.getElementById('c').value);
 
-            var x1 = (-n2+Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n1);
+    var delta = b * b - 4 * a * c;
 
-            var x2 = (-n2-Math.pow((Math.pow((n2),2)-4*n1*n3),(1/2)))/(2*n1);
+    if (delta < 0) {
+        document.getElementById('x1').innerHTML = "";
+        document.getElementById('x2').innerHTML = "";
+        document.getElementById('status').innerHTML = "Não existem raízes reais (delta < 0).";
+    } else {
+        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
-            document.getElementById('x1').innerHTML = x1.toFixed(2);
+        document.getElementById('x1').innerHTML = x1.toFixed(2);
+        document.getElementById('x2').innerHTML = x2.toFixed(2);
+        document.getElementById('status').innerHTML = "Raízes reais encontradas com sucesso.";
+    }
+}
 
-            document.getElementById('x2').innerHTML = x2.toFixed(2);
-        }
     </script>
     </section>
         <h2>Termo geral e fórmula de bhaskara:</h2>
